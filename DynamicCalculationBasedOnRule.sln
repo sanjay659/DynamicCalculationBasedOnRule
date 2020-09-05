@@ -3,13 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30406.217
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicCalculationBasedOnRule", "DynamicCalculationBasedOnRule\DynamicCalculationBasedOnRule.csproj", "{90FB3C18-5A16-45E3-96B3-0F69D85E8514}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DynamicCalculationBasedOnRule", "DynamicCalculationBasedOnRule\DynamicCalculationBasedOnRule.csproj", "{90FB3C18-5A16-45E3-96B3-0F69D85E8514}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuisnessEntities", "BuisnessEntities\BuisnessEntities.csproj", "{50C8084B-2FAD-4776-B5A4-A196E04CAC13}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuisnessEntities", "BuisnessEntities\BuisnessEntities.csproj", "{50C8084B-2FAD-4776-B5A4-A196E04CAC13}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuisnessObject", "BuisnessObject\BuisnessObject.csproj", "{F30E7308-2336-49A3-9A13-01417D346036}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuisnessObject", "BuisnessObject\BuisnessObject.csproj", "{F30E7308-2336-49A3-9A13-01417D346036}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessObject", "DataAccessObject\DataAccessObject.csproj", "{FFDCC88C-9863-405E-B4A5-504357A7903E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAccessObject", "DataAccessObject\DataAccessObject.csproj", "{FFDCC88C-9863-405E-B4A5-504357A7903E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuisnessObject.Test", "BuisnessObject.Test\BuisnessObject.Test.csproj", "{611A918B-4ABE-4E7A-BE17-897E59AD95FB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTest", "UnitTest", "{1A4CE138-A6D8-4C75-9B01-84C4428B5272}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,9 +37,16 @@ Global
 		{FFDCC88C-9863-405E-B4A5-504357A7903E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FFDCC88C-9863-405E-B4A5-504357A7903E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FFDCC88C-9863-405E-B4A5-504357A7903E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{611A918B-4ABE-4E7A-BE17-897E59AD95FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{611A918B-4ABE-4E7A-BE17-897E59AD95FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{611A918B-4ABE-4E7A-BE17-897E59AD95FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{611A918B-4ABE-4E7A-BE17-897E59AD95FB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{611A918B-4ABE-4E7A-BE17-897E59AD95FB} = {1A4CE138-A6D8-4C75-9B01-84C4428B5272}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5FD38B1C-750E-4325-A3EA-8D43D883F913}

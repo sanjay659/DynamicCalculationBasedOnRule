@@ -135,11 +135,11 @@ namespace BuisnessObject
                 if (Combineditems.Count() > 0)
                 {
                     var SKUCDetails = Combineditems.Where(itm => itm.SKUName.Equals("C", StringComparison.InvariantCultureIgnoreCase)).FirstOrDefault();
-                    if (!string.IsNullOrWhiteSpace(SKUCDetails.SKUName))
+                    if (SKUCDetails != null)
                         Firstdata = MasterData.Where(a => a.SKUNAME.Equals(SKUCDetails.SKUName, StringComparison.InvariantCultureIgnoreCase)).FirstOrDefault();
 
                     var SKUDDetails = items.Where(itm => itm.SKUName.Equals("D", StringComparison.InvariantCultureIgnoreCase)).FirstOrDefault();
-                    if (!string.IsNullOrWhiteSpace(SKUDDetails.SKUName))
+                    if (SKUDDetails != null)
                         Seconddata = MasterData.Where(a => a.SKUNAME.Equals(SKUDDetails.SKUName, StringComparison.InvariantCultureIgnoreCase)).FirstOrDefault();
 
 
@@ -167,10 +167,10 @@ namespace BuisnessObject
 
                     else
                     {
-                        if (!string.IsNullOrWhiteSpace(SKUCDetails.SKUName))
+                        if (SKUCDetails != null)
                             total = total + (SKUCDetails.Quantity * Firstdata.UnitPrice);
 
-                        if (!string.IsNullOrWhiteSpace(SKUDDetails.SKUName))
+                        if (SKUDDetails != null)
                             total = total + (SKUDDetails.Quantity * Seconddata.UnitPrice);
                     }
                 }
